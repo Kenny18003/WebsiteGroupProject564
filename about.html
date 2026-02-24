@@ -131,12 +131,10 @@ footer {
 </style>
 <script>
 function showCategory(value) {
-    if(value === "") {
-        document.getElementById("categoryResult").innerHTML = "";
-    } else {
-        document.getElementById("categoryResult").innerHTML =
-        "You selected: " + value;
+    if (value !== "") {
+        window.location.href = "services.html?category=" + encodeURIComponent(value);
     }
+
 }
 </script>
 
